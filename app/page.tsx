@@ -85,64 +85,78 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-2 mt-4">
             {[
               {
+                id: 1,
                 src: "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black",
                 alt: "JavaScript",
               },
               {
+                id: 2,
                 src: "https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white",
                 alt: "TypeScript",
               },
               {
+                id: 3,
                 src: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black",
                 alt: "React",
               },
               {
+                id: 4,
                 src: "https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white",
                 alt: "Next.js",
               },
               {
+                id: 5,
                 src: "https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white",
                 alt: "Node.js",
               },
               {
+                id: 6,
                 src: "https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white",
                 alt: "Express",
               },
               {
+                id: 7,
                 src: "https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white",
                 alt: "PostgreSQL",
               },
               {
+                id: 8,
                 src: "https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white",
                 alt: "AWS",
               },
               {
+                id: 9,
                 src: "https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white",
                 alt: "Docker",
               },
               {
+                id: 10,
                 src: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",
                 alt: "Git",
               },
               {
+                id: 11,
                 src: "https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=white",
                 alt: "Jest",
               },
               {
+                id: 12,
                 src: "https://img.shields.io/badge/-Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white",
                 alt: "Supabase",
               },
               {
+                id: 13,
                 src: "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white",
                 alt: "Tailwind CSS",
               },
               {
+                id: 14,
                 src: "https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white",
                 alt: "Vercel",
               },
-            ].map((skill, index) => (
+            ].map((skill) => (
               <Image
-                key={index}
+                key={skill.id}
                 src={skill.src}
                 alt={skill.alt}
                 width={50}
@@ -159,15 +173,100 @@ export default function Home() {
         >
           <h2 className="text-2xl font-semibold mb-4">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3].map((project) => (
+            {[
+              {
+                id: 1,
+                title: "Project 1",
+                src: "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black",
+                alt: "JavaScript",
+              },
+              {
+                id: 2,
+                title: "Project 2",
+                src: "https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white",
+                alt: "TypeScript",
+              },
+              {
+                id: 3,
+                title: "Project 3",
+                src: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black",
+                alt: "React",
+              },
+              {
+                id: 4,
+                title: "Project 4",
+                src: "https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white",
+                alt: "Next.js",
+              },
+              {
+                id: 5,
+                title: "Project 5",
+                src: "https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white",
+                alt: "Node.js",
+              },
+              {
+                id: 6,
+                title: "Project 6",
+                src: "https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white",
+                alt: "Express",
+              },
+              {
+                id: 7,
+                title: "Project 7",
+                src: "https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white",
+                alt: "PostgreSQL",
+              },
+              {
+                id: 8,
+                title: "Project 8",
+                src: "https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white",
+                alt: "AWS",
+              },
+              {
+                id: 9,
+                title: "Project 9",
+                src: "https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white",
+                alt: "Docker",
+              },
+              {
+                id: 10,
+                title: "Project 10",
+                src: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",
+                alt: "Git",
+              },
+              {
+                id: 11,
+                title: "Project 11",
+                src: "https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=white",
+                alt: "Jest",
+              },
+              {
+                id: 12,
+                title: "Project 12",
+                src: "https://img.shields.io/badge/-Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white",
+                alt: "Supabase",
+              },
+              {
+                id: 13,
+                title: "Project 13",
+                src: "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white",
+                alt: "Tailwind CSS",
+              },
+            ].map((project) => (
               <motion.div
-                key={project}
+                key={project.id}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
-                <h3 className="text-xl font-semibold">Project {project}</h3>
+                <h3 className="text-xl font-semibold">{project.title} </h3>
                 <p>Innovative solution leveraging cutting-edge technologies.</p>
+                <Image
+                  src={project.src}
+                  alt={project.alt}
+                  width={50}
+                  height={50}
+                />
               </motion.div>
             ))}
           </div>

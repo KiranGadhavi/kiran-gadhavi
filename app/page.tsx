@@ -21,14 +21,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300 dark:bg-gray-900 dark:text-white">
       <header className="py-6 px-4 flex justify-between items-center">
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl font-bold"
-        >
-          Kiran Gadhavi
-        </motion.h1>
+        <h1 className="text-2xl mx-auto font-bold mb-4">Kiran Gadhavi</h1>
+
         <button
           onClick={toggleDarkMode}
           className="p-2 rounded-full bg-gray-200 dark:bg-gray-700"
@@ -36,8 +30,9 @@ export default function Home() {
           {darkMode ? "🌞" : "🌙"}
         </button>
       </header>
+      <hr />
 
-      <main className="container mx-auto px-4">
+      <main className="container mx-auto px-4 max-w-3xl">
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -51,10 +46,11 @@ export default function Home() {
             alt="Kiran Gadhavi"
             className="rounded-full mx-auto mb-4 w-40 h-40 object-cover"
           />
-          <h2 className="text-4xl font-bold mb-2">Full Stack Developer</h2>
-          <p className="text-xl">
+          <h2 className="text-3xl font-bold mb-2">Full Stack Developer</h2>
+          <p className="text-xl mb-3">
             Crafting elegant solutions for complex problems
           </p>
+          <hr />
         </motion.section>
 
         <motion.section
@@ -212,7 +208,7 @@ export default function Home() {
           <p>GitHub: github.com/KiranGadhavi</p>
         </motion.section>
       </main>
-
+      <hr />
       <footer className="py-4 px-4 text-center">
         <div className="flex justify-center space-x-4 mb-4">
           <Link

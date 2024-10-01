@@ -193,15 +193,21 @@ const ProjectComponent = ({ title }: { title: string }) => {
         />
         <h2 className="text-3xl font-semibold mb-4">{title}</h2>
       </div>
-
       {projects.map((project) => (
         <motion.section
-          key={project.id}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="my-8 flex flex-col items-center"
+          className="my-8"
         >
+          <Image
+            src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif"
+            width={30}
+            height={30}
+            alt="Prrojects"
+          />
+          <h2 className="text-3xl font-semibold mb-4">{title}</h2>
+
           <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
 
           {/* Project Image */}

@@ -52,7 +52,7 @@ const projects = [
     description:
       "An admin dashboard built with React, TypeScript, and SCSS. It allows users to manage users, products, and orders.",
     href: "https://admin-dashboard-phi-sand.vercel.app/",
-    projectImage: "/admin.png",
+    projectImage: "/adminImg.png",
     technologies: [
       {
         src: "https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white",

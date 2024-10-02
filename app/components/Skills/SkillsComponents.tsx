@@ -19,7 +19,9 @@ export default function SkillsComponents({ title }: { title: string }) {
               height={30}
               alt="Skills"
             />
-            <h2 className="text-2xl font-semibold">{title}</h2>
+            <h2 className="text-2xl font-semibold transition-colors duration-300 hover:text-blue-500">
+              {title}
+            </h2>
           </div>
 
           <div className="overflow-hidden">

@@ -6,62 +6,6 @@ import Link from "next/link";
 const projects = [
   {
     id: 1,
-    title: "QuizQuest",
-    description:
-      "A quiz application built HTML, JavaScript, and CSS. It allows users to create and take quizzes on various topics. It also includes a leaderboard feature to track user scores.",
-    projectImage: "/quiz.png",
-    href: "https://kirangadhavi.github.io/QuizQuest/",
-    technologies: [
-      {
-        src: "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black",
-        alt: "JavaScript",
-      },
-      {
-        src: "https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white",
-        alt: "HTML5",
-      },
-      {
-        src: "https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white",
-        alt: "CSS3",
-      },
-      {
-        src: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",
-        alt: "Git",
-      },
-      {
-        src: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",
-        alt: "Git",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Admin Dashboard",
-    description:
-      "An admin dashboard built with React, TypeScript, and SCSS. It allows users to manage users, products, and orders.",
-    href: "https://admin-dashboard-phi-sand.vercel.app/",
-    projectImage: "/admin.png",
-    technologies: [
-      {
-        src: "https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white",
-        alt: "TypeScript",
-      },
-      {
-        src: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black",
-        alt: "React",
-      },
-      {
-        src: "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white",
-        alt: "Tailwind CSS",
-      },
-      {
-        src: "https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white",
-        alt: "Vercel",
-      },
-    ],
-  },
-  {
-    id: 3,
     title: "kreactify",
     description:
       "A web application built with React, JavaScript, and CSS. Our user-friendly interface simplifies the booking process, allowing you to secure your ideal accommodation in just a few clicks.",
@@ -102,6 +46,64 @@ const projects = [
       },
     ],
   },
+  {
+    id: 2,
+    title: "Admin Dashboard",
+    description:
+      "An admin dashboard built with React, TypeScript, and SCSS. It allows users to manage users, products, and orders.",
+    href: "https://admin-dashboard-phi-sand.vercel.app/",
+    projectImage: "/admin.png",
+    technologies: [
+      {
+        src: "https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white",
+        alt: "TypeScript",
+      },
+      {
+        src: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black",
+        alt: "React",
+      },
+      {
+        src: "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white",
+        alt: "Tailwind CSS",
+      },
+      {
+        src: "https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white",
+        alt: "Vercel",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Airbnb Replica",
+    description:
+      "A web application built with React, JavaScript, and Tailwind CSS. It allows users to book and manage their Airbnb stays.",
+    href: "https://kirangadhavi.github.io/airbnb-replica/",
+    projectImage: "/airbnbImg.png",
+    technologies: [
+      {
+        src: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black",
+        alt: "React",
+      },
+
+      {
+        src: "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black",
+        alt: "JavaScript",
+      },
+      {
+        src: "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white",
+        alt: "Tailwind CSS",
+      },
+      {
+        src: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",
+        alt: "Git",
+      },
+      {
+        src: "https://img.shields.io/badge/-Github-181717?style=flat-square&logo=github&logoColor=white",
+        alt: "Github",
+      },
+    ],
+  },
+
   {
     id: 4,
     title: "DreamCatcher",
@@ -151,98 +153,125 @@ const projects = [
   },
   {
     id: 5,
-    title: "Airbnb Replica",
+    title: "QuizQuest",
     description:
-      "A web application built with React, JavaScript, and Tailwind CSS. It allows users to book and manage their Airbnb stays.",
-    href: "https://kirangadhavi.github.io/airbnb-replica/",
-    projectImage: "/airbnbImg.png",
+      "A quiz application built HTML, JavaScript, and CSS. It allows users to create and take quizzes on various topics. It also includes a leaderboard feature to track user scores.",
+    projectImage: "/quiz.png",
+    href: "https://kirangadhavi.github.io/QuizQuest/",
     technologies: [
-      {
-        src: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black",
-        alt: "React",
-      },
-
       {
         src: "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black",
         alt: "JavaScript",
       },
       {
-        src: "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white",
-        alt: "Tailwind CSS",
+        src: "https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white",
+        alt: "HTML5",
+      },
+      {
+        src: "https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white",
+        alt: "CSS3",
       },
       {
         src: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",
         alt: "Git",
       },
       {
-        src: "https://img.shields.io/badge/-Github-181717?style=flat-square&logo=github&logoColor=white",
-        alt: "Github",
+        src: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",
+        alt: "Git",
       },
     ],
   },
 ];
+const cardVariants = {
+  hover: { scale: 1.05, boxShadow: "0px 4px 10px rgba(0,0,0,0.2)" },
+  tap: { scale: 0.95 },
+};
+
+// export default ProjectComponent;
 const ProjectComponent = ({ title }: { title: string }) => {
   return (
-    <div className="grid grid-cols gap-4 text-center">
-      <div className="flex items-center justify-center">
-        <Image
-          src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif"
-          width={30}
-          height={30}
-          alt="Prrojects"
-        />
-        <h2 className="text-3xl font-semibold mb-4">{title}</h2>
-      </div>
-      {projects.map((project) => (
-        <motion.section
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          className="my-8"
+    <div className="container mx-auto py-16">
+      {/* Section Title */}
+      <div className="text-center mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="flex items-center justify-center space-x-3"
         >
           <Image
             src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif"
+            alt="Projects"
             width={30}
             height={30}
-            alt="Prrojects"
+            className="inline-block"
           />
-          <h2 className="text-3xl font-semibold mb-4">{title}</h2>
+          <h2 className="text-3xl font-bold transition-colors duration-300 hover:text-blue-500">
+            {title}
+          </h2>
+        </motion.div>
+      </div>
 
-          <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        {projects.map((project) => (
+          <motion.div
+            key={project.id}
+            variants={cardVariants}
+            whileHover="hover"
+            whileTap="tap"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="font-white border border-gray-200 bg-green-50 bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            {/* Project Image */}
+            {project.projectImage && (
+              <motion.div whileHover={{ scale: 1.1 }}>
+                <Image
+                  src={project.projectImage}
+                  alt={project.title}
+                  width={600}
+                  height={400}
+                  className="w-full h-48 object-fit transition-transform duration-300 transform hover:scale-110"
+                />
+              </motion.div>
+            )}
+            <div className="p-6">
+              {/* Project Title */}
+              <h3 className="text-2xl text-gray-400 font-bold mb-3 transition-colors duration-300 hover:text-blue-500">
+                {project.title}
+              </h3>
 
-          {/* Project Image */}
-          {project.projectImage && (
-            <Image
-              src={project.projectImage}
-              alt={`${project.title} Image`}
-              width={600}
-              height={300}
-              className="rounded-lg mb-4 w-full h-46 object-cover"
-            />
-          )}
-          {/* Project Description */}
-          <p className="text-gray-600">{project.description}</p>
-          {/* Mapping through the technologies array */}
-          <div className="flex space-x-2 my-2">
-            {project.technologies.map((tech, index) => (
-              <Image
-                key={index}
-                src={tech.src}
-                alt={tech.alt}
-                width={50}
-                height={50}
-              />
-            ))}
-          </div>
+              {/* Project Description */}
+              <p className="text-gray-600 mb-4">{project.description}</p>
 
-          {/* Link to the project */}
-          {project.href && (
-            <Link href={project.href} passHref>
-              <p className="text-blue-500 underline">Visit Project</p>
-            </Link>
-          )}
-        </motion.section>
-      ))}
+              {/* Technologies Used */}
+              <div className="flex space-x-2 mb-4">
+                {project.technologies.map((tech, index) => (
+                  <Image
+                    key={index}
+                    src={tech.src}
+                    alt={tech.alt}
+                    width={30}
+                    height={30}
+                    className="inline-block"
+                  />
+                ))}
+              </div>
+
+              {/* Project Link */}
+              {project.href && (
+                <Link href={project.href}>
+                  <p className="text-blue-500 font-medium hover:underline">
+                    Visit Project &rarr;
+                  </p>
+                </Link>
+              )}
+            </div>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };

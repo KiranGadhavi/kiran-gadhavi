@@ -9,7 +9,10 @@ import SkillsComponents from "./components/Skills/SkillsComponents";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-
+  const cardVariants = {
+    hover: { scale: 1.05, boxShadow: "0px 4px 10px rgba(0,0,0,0.2)" },
+    tap: { scale: 0.95 },
+  };
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -23,7 +26,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300 dark:bg-gray-900 dark:text-white">
       <header className="py-6 px-4 flex justify-between items-center pb-4">
-        <h1 className="text-2xl mx-auto font-bold ">Kiran Gadhavi</h1>
+        <h1 className="text-2xl mx-auto font-bold transition-colors duration-300 hover:text-blue-500">
+          Kiran Gadhavi
+        </h1>
 
         <button
           onClick={toggleDarkMode}
@@ -41,18 +46,27 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="my-8 text-center"
         >
-          <Image
-            src="/picture.jpg"
-            width={200}
-            height={200}
-            alt="Kiran Gadhavi"
-            className="rounded-full mx-auto mb-4 w-40 h-40 object-cover"
-          />
-          <h2 className="text-3xl font-bold mb-2">Full Stack Developer</h2>
-          <p className="text-xl mb-3">
-            Crafting elegant solutions for complex problems
-          </p>
-          <hr />
+          <motion.div
+            variants={cardVariants}
+            whileHover="hover"
+            whileTap="tap"
+            className="rounded-lg bg-green-50 p-4 shadow-lg  bg-opacity-10 backdrop-blur-lg"
+          >
+            <Image
+              src="/picture.jpg"
+              width={200}
+              height={200}
+              alt="Kiran Gadhavi"
+              className="rounded-full mx-auto mb-4 w-40 h-40  shadow-xl object-cover"
+            />
+            <h2 className="text-3xl font-bold mb-2 transition-colors duration-300 hover:text-blue-500">
+              Full Stack Developer
+            </h2>
+            <p className="text-xl mb-3">
+              Crafting elegant solutions for complex problems
+            </p>
+            <hr />
+          </motion.div>
         </motion.section>
 
         <motion.section
@@ -68,7 +82,10 @@ export default function Home() {
               height={42}
               alt="About"
             />
-            <h2 className="text-2xl font-semibold"> About Me</h2>
+            <h2 className="text-2xl font-semibold transition-colors duration-300 hover:text-blue-500">
+              {" "}
+              About Me
+            </h2>
           </div>
           <p>
             I’m a Full Stack Developer with a passion for building complete web
@@ -87,7 +104,9 @@ export default function Home() {
           transition={{ delay: 0.5, duration: 0.5 }}
           className="my-8 text-center"
         >
-          <h2 className="text-2xl font-semibold mb-4">Work Experience</h2>
+          <h2 className="text-2xl font-semibold mb-4 transition-colors duration-300 hover:text-blue-500">
+            Work Experience
+          </h2>
           <div className="space-y-4">
             <div>
               <h3 className="text-xl font-semibold">
@@ -110,7 +129,9 @@ export default function Home() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="py-6 text-center"
         >
-          <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+          <h2 className="text-2xl font-semibold mb-4 transition-colors duration-300 hover:text-blue-500">
+            Contact
+          </h2>
           <p>Email: kirangadhavi@hotmail.com</p>
           <p>LinkedIn: linkedin.com/in/kiran-gadhavi7</p>
           <p>GitHub: github.com/KiranGadhavi</p>
@@ -143,7 +164,9 @@ export default function Home() {
         >
           Download Resume
         </Link>
-        <p>&copy; 2024 Kiran Gadhavi. All rights reserved.</p>
+        <p className="transition-colors duration-300 hover:text-blue-500">
+          &copy; 2024 Kiran Gadhavi. All rights reserved.
+        </p>
       </footer>
     </div>
   );

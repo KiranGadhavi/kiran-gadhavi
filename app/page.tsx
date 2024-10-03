@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300 dark:bg-gray-900 dark:text-white">
-      <header className="py-6 px-4 flex justify-between items-center pb-4">
+      <header className="py-6 px-4 flex justify-between items-center pb-4 fixed w-full z-10  top-0 bg-background dark:bg-gray-900 shadow-md">
         <h1 className="text-2xl mx-auto font-bold transition-colors duration-300 hover:text-blue-500">
           Kiran Gadhavi
         </h1>
@@ -37,9 +37,9 @@ export default function Home() {
           {darkMode ? "🌞" : "🌙"}
         </button>
       </header>
-      <hr />
+      <hr className="relative w-full top-20 " />
 
-      <main className="container mx-auto px-4 max-w-3xl">
+      <main className="container mx-auto px-4 max-w-3xl mt-32">
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

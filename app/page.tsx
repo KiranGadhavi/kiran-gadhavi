@@ -41,7 +41,7 @@ export default function Home() {
       <header className="py-4 px-4 flex justify-between items-center pb-4 fixed w-full z-10  top-0 bg-background dark:bg-gray-900 shadow-md">
         <h1 className="text-2xl mx-auto font-bold transition-colors duration-300 hover:text-blue-500">
           {/* Kiran Gadhavi */}
-          <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+I'm+Kiran+Gadhavi;Welcome+to+my+GitHub!&center=true&size=24" />
+          <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+I'm+Kiran+Gadhavi;Welcome+to+my+Portfolio!&center=true&size=24" />
         </h1>
 
         <button

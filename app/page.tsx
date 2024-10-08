@@ -13,6 +13,19 @@ export default function Home() {
     hover: { scale: 1.05, boxShadow: "0px 4px 10px rgba(0,0,0,0.2)" },
     tap: { scale: 0.95 },
   };
+  const [copyStatus, setCopyStatus] = useState<string | null>(null); // State to manage copy status
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        setCopyStatus(text); // Set the copied text as the status
+        setTimeout(() => setCopyStatus(null), 2000); // Clear the status after 2 seconds
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  };
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -65,6 +78,32 @@ export default function Home() {
             <p className="text-xl mb-3">
               Crafting elegant solutions for complex problems
             </p>
+            <div className="flex justify-center space-x-4 mb-4">
+              <Link
+                href="https://linkedin.com/in/kiran-gadhavi7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-600"
+              >
+                LinkedIn
+              </Link>
+              <Link
+                href="https://github.com/KiranGadhavi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200"
+              >
+                GitHub
+              </Link>
+            </div>
+            <Link
+              href="/kiran_gadhavi_resume.pdf"
+              download
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded inline-block mb-4"
+            >
+              Download Resume
+            </Link>
+
             <hr />
           </motion.div>
         </motion.section>
@@ -104,15 +143,25 @@ export default function Home() {
           transition={{ delay: 0.5, duration: 0.5 }}
           className="my-8 text-center"
         >
-          <h2 className="text-2xl font-semibold mb-4 transition-colors duration-300 hover:text-blue-500">
-            Work Experience
-          </h2>
+          <div className="flex flex-wrap gap-2 mb-6 justify-center">
+            <Image
+              src="https://media.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif"
+              width={30}
+              height={30}
+              alt="Work Experience"
+            />
+            <h2 className="text-2xl font-semibold transition-colors duration-300 hover:text-blue-500">
+              {" "}
+              Work Experience
+            </h2>
+          </div>
+
           <div className="space-y-4">
             <div>
-              <h3 className="text-xl font-semibold">
+              <h3 className="text-xl font-semibold mb-2">
                 Full Stack Developer at School Of Code
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
                 2024 - Present
               </p>
               <p>
@@ -129,41 +178,69 @@ export default function Home() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="py-6 text-center"
         >
-          <h2 className="text-2xl font-semibold mb-4 transition-colors duration-300 hover:text-blue-500">
-            Contact
-          </h2>
-          <p>Email: kirangadhavi@hotmail.com</p>
-          <p>LinkedIn: linkedin.com/in/kiran-gadhavi7</p>
-          <p>GitHub: github.com/KiranGadhavi</p>
+          <div className="flex flex-col items-center">
+            {" "}
+            {/* Centering the entire content */}
+            <div className="flex">
+              <Image
+                src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif"
+                width={30}
+                height={20}
+                alt="Contact"
+                className="w-12 h-10"
+              />
+              <h2 className="text-2xl font-bold mb-4">Contact Me</h2>{" "}
+            </div>
+            {/* Add a title for the section */}
+            <ul className="list-none space-y-4 text-gray-500">
+              {" "}
+              {/* Space between list items */}
+              <li className="flex items-center justify-between bg-gray-800 p-4 rounded shadow-md w-full max-w-md">
+                <span>
+                  Email: <span id="email">kirangadhavi@hotmail.com</span>
+                </span>
+                <button
+                  className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200"
+                  onClick={() => copyToClipboard("kirangadhavi@hotmail.com")}
+                >
+                  {copyStatus === "kirangadhavi@hotmail.com"
+                    ? "Copied"
+                    : "Copy"}
+                </button>
+              </li>
+              <li className="flex items-center justify-between bg-gray-800 p-4  gap-2 rounded shadow-md w-full max-w-md">
+                <span>
+                  LinkedIn:{" "}
+                  <span id="linkedin">linkedin.com/in/kiran-gadhavi7 </span>
+                </span>
+                <button
+                  className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200"
+                  onClick={() =>
+                    copyToClipboard("linkedin.com/in/kiran-gadhavi7")
+                  }
+                >
+                  {copyStatus === "linkedin.com/in/kiran-gadhavi7"
+                    ? "Copied"
+                    : "Copy"}
+                </button>
+              </li>
+              <li className="flex items-center justify-between bg-gray-800 p-4 rounded shadow-md w-full max-w-md mb-4">
+                <span>
+                  GitHub: <span id="github">github.com/KiranGadhavi</span>
+                </span>
+                <button
+                  className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200"
+                  onClick={() => copyToClipboard("github.com/KiranGadhavi")}
+                >
+                  {copyStatus === "github.com/KiranGadhavi" ? "Copied" : "Copy"}
+                </button>
+              </li>
+            </ul>
+          </div>
         </motion.section>
       </main>
       <hr />
       <footer className="py-4 px-4 text-center">
-        <div className="flex justify-center space-x-4 mb-4">
-          <Link
-            href="https://linkedin.com/in/kiran-gadhavi7"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-600"
-          >
-            LinkedIn
-          </Link>
-          <Link
-            href="https://github.com/KiranGadhavi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-700 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200"
-          >
-            GitHub
-          </Link>
-        </div>
-        <Link
-          href="/kiran_gadhavi_resume.pdf"
-          download
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded inline-block mb-4"
-        >
-          Download Resume
-        </Link>
         <p className="transition-colors duration-300 hover:text-blue-500">
           &copy; 2024 Kiran Gadhavi. All rights reserved.
         </p>

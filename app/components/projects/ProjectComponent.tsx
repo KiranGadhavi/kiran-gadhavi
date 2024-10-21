@@ -187,6 +187,45 @@ const projects = [
       },
     ],
   },
+  {
+    id: 6,
+    title: "Banking App",
+    description:
+      "Welcome to the Banking App! This project is a modern web application designed to provide users with a streamlined experience for managing their banking transactions.",
+    href: "https://banking-app-ten.vercel.app/",
+    githubLink: "https://github.com/kirangadhavi/banking-app",
+    projectImage: "/bankApp.png",
+    technologies: [
+      {
+        src: "https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white",
+        alt: "Next.js",
+      },
+      {
+        src: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black",
+        alt: "React",
+      },
+      {
+        src: "https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white",
+        alt: "Typescript",
+      },
+      {
+        src: "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white",
+        alt: "Tailwind CSS",
+      },
+      {
+        src: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",
+        alt: "Git",
+      },
+      {
+        src: "https://img.shields.io/badge/-Github-181717?style=flat-square&logo=github&logoColor=white",
+        alt: "Github",
+      },
+      {
+        src: "https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white",
+        alt: "Vercel",
+      },
+    ],
+  },
 ];
 const cardVariants = {
   hover: { scale: 1.05, boxShadow: "0px 4px 10px rgba(0,0,0,0.2)" },
@@ -285,40 +324,7 @@ const ProjectComponent = ({ title }: { title: string }) => {
                     </p>
                   </Link>
                 )}
-                {/* {project.href && (
-                  <Link href={project.href}>
-                    <p className="text-blue-500 font-medium hover:underline">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm7.926 8h-3.76a15.26 15.26 0 00-1.348-5.173A8.033 8.033 0 0119.926 10zM12 4a13.372 13.372 0 012.056 6H9.944A13.372 13.372 0 0112 4zM6.182 6.827A15.26 15.26 0 004.435 10H.74a8.034 8.034 0 015.442-3.173zM2.074 14h3.76a15.26 15.26 0 001.348 5.173A8.033 8.033 0 014.074 14zM12 20a13.372 13.372 0 01-2.056-6h4.112A13.372 13.372 0 0112 20zm5.818-1.827A15.26 15.26 0 0019.565 14h3.695a8.034 8.034 0 01-5.442 3.173z" />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zM5 5h6V3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-6h-2v6H5V5z" />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path d="M9.622 16.207L2.711 23.121c-.191.191-.451.294-.707.294-.254 0-.515-.103-.707-.293-.391-.391-.39-1.023.003-1.416L7.79 14.38 6.378 8.707l4.915-4.915c.573-.573 1.416-.757 2.192-.481L18 4.414l2.292-2.292c.36-.36.894-.487 1.385-.315.492.172.843.624 1.017 1.117.172.493.045 1.027-.315 1.386L20.585 6l1.102 4.515c.276.776.092 1.619-.481 2.192l-4.914 4.914-5.672-1.412zm2.829-3.536c.552.552 1.437.552 1.989 0 .552-.552.552-1.438 0-1.99-.552-.551-1.437-.551-1.989 0-.552.552-.552 1.438 0 1.99z" />
-                      </svg>
-                      Visit Project &rarr;
-                    </p>
-                  </Link>
-                )} */}
+
                 {project.githubLink && (
                   <Link href={project.githubLink}>
                     <p className="text-gray-400 font-medium hover:underline hover:text-blue-500 flex items-center">
@@ -342,90 +348,6 @@ const ProjectComponent = ({ title }: { title: string }) => {
         ))}
       </div>
     </div>
-
-    // <div className="container mx-auto py-16">
-    //   {/* Section Title */}
-    //   <div className="text-center mb-12">
-    //     <motion.div
-    //       initial={{ opacity: 0, y: 20 }}
-    //       animate={{ opacity: 1, y: 0 }}
-    //       transition={{ delay: 0.2, duration: 0.5 }}
-    //       className="flex items-center justify-center space-x-3"
-    //     >
-    //       <Image
-    //         src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif"
-    //         alt="Projects"
-    //         width={30}
-    //         height={30}
-    //         className="inline-block"
-    //       />
-    //       <h2 className="text-3xl font-bold transition-colors duration-300 hover:text-blue-500">
-    //         {title}
-    //       </h2>
-    //     </motion.div>
-    //   </div>
-
-    //   {/* Projects Grid */}
-    //   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-    //     {projects.map((project) => (
-    //       <motion.div
-    //         key={project.id}
-    //         variants={cardVariants}
-    //         whileHover="hover"
-    //         whileTap="tap"
-    //         initial={{ opacity: 0, scale: 0.9 }}
-    //         animate={{ opacity: 1, scale: 1 }}
-    //         transition={{ delay: 0.2, duration: 0.5 }}
-    //         className="font-white border border-gray-200 bg-green-50 bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-    //       >
-    //         {/* Project Image */}
-    //         {project.projectImage && (
-    //           <motion.div whileHover={{ scale: 1.1 }}>
-    //             <Image
-    //               src={project.projectImage}
-    //               alt={project.title}
-    //               width={600}
-    //               height={400}
-    //               className="w-full h-48 object-fit transition-transform duration-300 transform hover:scale-110"
-    //             />
-    //           </motion.div>
-    //         )}
-    //         <div className="p-6">
-    //           {/* Project Title */}
-    //           <h3 className="text-2xl text-gray-400 font-bold mb-3 transition-colors duration-300 hover:text-blue-500">
-    //             {project.title}
-    //           </h3>
-
-    //           {/* Project Description */}
-    //           <p className="text-gray-600 mb-4">{project.description}</p>
-
-    //           {/* Technologies Used */}
-    //           <div className="flex space-x-2 mb-4">
-    //             {project.technologies.map((tech, index) => (
-    //               <Image
-    //                 key={index}
-    //                 src={tech.src}
-    //                 alt={tech.alt}
-    //                 width={30}
-    //                 height={30}
-    //                 className="inline-block"
-    //               />
-    //             ))}
-    //           </div>
-
-    //           {/* Project Link */}
-    //           {project.href && (
-    //             <Link href={project.href}>
-    //               <p className="text-blue-500 font-medium hover:underline">
-    //                 Visit Project &rarr;
-    //               </p>
-    //             </Link>
-    //           )}
-    //         </div>
-    //       </motion.div>
-    //     ))}
-    //   </div>
-    // </div>
   );
 };
 

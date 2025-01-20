@@ -109,13 +109,23 @@ export default function SkillsComponents({ title }: { title: string }) {
                     src: "https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white",
                     alt: "Vercel",
                   },
+                  {
+                    id: 15,
+                    src: "https://img.shields.io/badge/-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white",
+                    alt: "Prisma",
+                  },
+                  {
+                    id: 16,
+                    src: "https://img.shields.io/badge/-Fastify-000000?style=flat-square&logo=fastify&logoColor=white",
+                    alt: "Fastify",
+                  },
                 ].map((skill) => (
                   <Image
                     key={skill.id}
                     src={skill.src}
                     alt={skill.alt}
-                    width={100}
-                    height={100}
+                    width={98}
+                    height={30}
                   />
                 ))}
               </div>

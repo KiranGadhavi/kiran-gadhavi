@@ -98,7 +98,7 @@ export default function Home() {
               </Link>
             </div>
             <Link
-              href="/kiran_gadhavi_resume.pdf"
+              href="/Kiran_CV.pdf"
               download
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded inline-block mb-4"
             >

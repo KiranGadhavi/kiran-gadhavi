@@ -124,8 +124,9 @@ export default function SkillsComponents({ title }: { title: string }) {
                     key={skill.id}
                     src={skill.src}
                     alt={skill.alt}
-                    width={98}
-                    height={30}
+                    width={136} // Optimized width
+                    height={66} // Optimized height
+                    loading="eager" // Prevent delays
                   />
                 ))}
               </div>

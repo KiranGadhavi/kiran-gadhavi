@@ -160,10 +160,10 @@ export default function Home() {
           <div className="space-y-4">
             <div>
               <h3 className="text-xl font-semibold mb-2">
-                Full Stack Developer at School Of Code
+                Full Stack Developer at Anima People
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                2024 - Present
+                2025 - Present
               </p>
               <p>
                 Led development of scalable web applications using React and
@@ -193,7 +193,7 @@ export default function Home() {
               <h2 className="text-2xl font-bold mb-4">Contact Me</h2>{" "}
             </div>
             {/* Add a title for the section */}
-            <ul className="list-none space-y-4 text-gray-500">
+            <ul className="list-none space-y-4 text-gray-500 text-sm">
               {" "}
               {/* Space between list items */}
               <li className="flex items-center justify-between bg-gray-800 p-4 rounded shadow-md w-full max-w-md">
@@ -212,7 +212,9 @@ export default function Home() {
               <li className="flex items-center justify-between bg-gray-800 p-4  gap-2 rounded shadow-md w-full max-w-md">
                 <span>
                   LinkedIn:{" "}
-                  <span id="linkedin">linkedin.com/in/kiran-gadhavi7 </span>
+                  <span id="linkedin">
+                    https://www.linkedin.com/in/kiran-gadhavi7/
+                  </span>
                 </span>
                 <button
                   className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200"
@@ -227,10 +229,11 @@ export default function Home() {
               </li>
               <li className="flex items-center justify-between bg-gray-800 p-4 rounded shadow-md w-full max-w-md mb-4">
                 <span>
-                  GitHub: <span id="github">github.com/KiranGadhavi</span>
+                  GitHub:{" "}
+                  <span id="github">https://github.com/KiranGadhavi</span>
                 </span>
                 <button
-                  className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200"
+                  className="bg-blue-500 items-center justify-center text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200"
                   onClick={() => copyToClipboard("github.com/KiranGadhavi")}
                 >
                   {copyStatus === "github.com/KiranGadhavi" ? "Copied" : "Copy"}

@@ -371,13 +371,13 @@ const ProjectComponent = ({ title }: { title: string }) => {
                 <div className="flex justify-between items-center">
                   {project.href && (
                     <Link href={project.href}>
-                      <p className="text-gray-400 font-small hover:underline hover:text-blue-500 flex items-center">
+                      <p className="text-gray-400 font-medium hover:underline hover:text-blue-500 flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="currentColor"
                           viewBox="0 0 24 24"
-                          width="18"
-                          height="18"
+                          width="22"
+                          height="22"
                           className="mr-2"
                         >
                           <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zM5 5h6V3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-6h-2v6H5V5z" />
@@ -389,11 +389,11 @@ const ProjectComponent = ({ title }: { title: string }) => {
 
                   {project.githubLink && (
                     <Link href={project.githubLink}>
-                      <p className="text-gray-400 font-small hover:underline hover:text-blue-500 flex items-center">
+                      <p className="text-gray-400 font-medium hover:underline hover:text-blue-500 flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
+                          width="22"
+                          height="22"
                           fill="currentColor"
                           className="mr-2"
                           viewBox="0 0 24 24"

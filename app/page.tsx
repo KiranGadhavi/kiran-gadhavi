@@ -42,6 +42,10 @@ export default function Home() {
         <h1 className="text-2xl mx-auto font-bold transition-colors duration-300 hover:text-blue-500">
           {/* Kiran Gadhavi */}
           <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+I'm+Kiran+Gadhavi;Welcome+to+my+Portfolio!&center=true&size=24" />
+          <p className="text-sm text-green-600 font-medium">
+            Open to Full-Time Roles | Full Stack / Frontend Developer | Based in
+            the UK (Visa Ready)
+          </p>
         </h1>
 
         <button
@@ -51,7 +55,7 @@ export default function Home() {
           {darkMode ? "🌞" : "🌙"}
         </button>
       </header>
-      <hr className="relative w-full top-24 " />
+      <hr className="relative w-full top-28 " />
 
       <main className="container mx-auto px-4 max-w-3xl mt-32">
         <motion.section
@@ -98,7 +102,7 @@ export default function Home() {
               </Link>
             </div>
             <Link
-              href="/Kiran_CV.pdf"
+              href="/Developer.pdf"
               download
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded inline-block mb-4"
             >
@@ -158,13 +162,80 @@ export default function Home() {
           </div>
 
           <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-semibold mb-2">
-                Full Stack Developer at Anima People
-              </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                2025 - Present
-              </p>
+            <div className="py-2">
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-2">
+                  Full Stack Developer at Anima People
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                  London, UK • Full-time • Internship | Nov 2024 – May 2025
+                </p>
+                <p>
+                  Built and optimized full-stack features using Next.js, React,
+                  Node.js, Fastify, Prisma, and PostgreSQL. Collaborated across
+                  teams to deliver scalable, responsive web applications with a
+                  strong focus on performance and usability.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-2">
+                  Full Stack Developer at School of Code
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                  West Midlands, UK • Full-time • Jun 2024 – Oct 2024
+                </p>
+                <p>
+                  Created scalable web apps using React, Next.js, Tailwind,
+                  Node.js, and PostgreSQL. Built full-stack projects including a
+                  Recipe API and a quiz app with API integration. Employed CI/CD
+                  pipelines (GitHub Actions, Docker) and TDD with Vitest and
+                  Playwright.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-2">
+                  Frontend Developer at Pearl Organisation
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                  India • Full-time • Aug 2020 – Apr 2023
+                </p>
+                <p>
+                  Developed React-based e-commerce and admin dashboard apps.
+                  Improved UX, reduced load times by 30%, and implemented unit
+                  tests. Used Kanban (JIRA), Figma, and GitHub for collaborative
+                  development.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-2">
+                  IT Trainer at Cyber Radix
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                  India • Full-time • Jan 2018 – Jun 2020
+                </p>
+                <p>
+                  Delivered training on web development (HTML, CSS, JavaScript,
+                  Bootstrap) and programming fundamentals (Java, Python, C++).
+                  Emphasized hands-on project work and practical application.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-2">
+                  Frontend Developer at Innotical Solutions
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                  India • Full-time • Jul 2016 – Nov 2017
+                </p>
+                <p>
+                  Developed responsive and user-friendly web interfaces using
+                  HTML, Bootstrap CSS, and JavaScript.
+                </p>
+              </div>
+
               <p>
                 Led development of scalable web applications using React and
                 Node.js.
@@ -219,10 +290,10 @@ export default function Home() {
                 <button
                   className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200"
                   onClick={() =>
-                    copyToClipboard("linkedin.com/in/kiran-gadhavi7")
+                    copyToClipboard("https://linkedin.com/in/kiran-gadhavi7/")
                   }
                 >
-                  {copyStatus === "linkedin.com/in/kiran-gadhavi7"
+                  {copyStatus === "https://linkedin.com/in/kiran-gadhavi7/"
                     ? "Copied"
                     : "Copy"}
                 </button>
@@ -234,9 +305,13 @@ export default function Home() {
                 </span>
                 <button
                   className="bg-blue-500 items-center justify-center text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200"
-                  onClick={() => copyToClipboard("github.com/KiranGadhavi")}
+                  onClick={() =>
+                    copyToClipboard("https://github.com/KiranGadhavi")
+                  }
                 >
-                  {copyStatus === "github.com/KiranGadhavi" ? "Copied" : "Copy"}
+                  {copyStatus === "https://github.com/KiranGadhavi"
+                    ? "Copied"
+                    : "Copy"}
                 </button>
               </li>
             </ul>

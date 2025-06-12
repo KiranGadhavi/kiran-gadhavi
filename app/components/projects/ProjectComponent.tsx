@@ -275,6 +275,49 @@ const projects = [
       },
     ],
   },
+  {
+    id: 8,
+    title: "Hope_Clinic",
+    description:
+      "Currently building a web app for a Hope clinic with email-based appointment booking, contact options, and an interactive map. Focused on clean design, responsive layout, and intuitive UX using EmailJS and React Leaflet.",
+    href: "https://dun-hope-clinic.vercel.app/",
+    githubLink: "https://github.com/KiranGadhavi/hopeClinic",
+    projectImage: "/project_clinic.png",
+    technologies: [
+      {
+        src: "https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white",
+        alt: "Next.js",
+      },
+      {
+        src: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black",
+        alt: "React",
+      },
+      {
+        src: "https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white",
+        alt: "TypeScript",
+      },
+      {
+        src: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",
+        alt: "Git",
+      },
+      {
+        src: "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white",
+        alt: "Tailwind CSS",
+      },
+      {
+        src: "https://img.shields.io/badge/-Github-181717?style=flat-square&logo=github&logoColor=white",
+        alt: "Github",
+      },
+      {
+        src: "https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=white",
+        alt: "Jest",
+      },
+      {
+        src: "https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white",
+        alt: "Vercel",
+      },
+    ],
+  },
 ];
 
 const cardVariants = {
@@ -371,29 +414,29 @@ const ProjectComponent = ({ title }: { title: string }) => {
                 <div className="flex justify-between items-center">
                   {project.href && (
                     <Link href={project.href}>
-                      <p className="text-gray-400 font-medium hover:underline hover:text-blue-500 flex items-center">
+                      <p className="text-gray-400 font-small hover:underline hover:text-blue-500 flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="currentColor"
                           viewBox="0 0 24 24"
-                          width="22"
-                          height="22"
+                          width="18"
+                          height="18"
                           className="mr-2"
                         >
                           <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zM5 5h6V3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-6h-2v6H5V5z" />
                         </svg>
-                        Visit Project &rarr;
+                        Live Demo &rarr;
                       </p>
                     </Link>
                   )}
 
                   {project.githubLink && (
                     <Link href={project.githubLink}>
-                      <p className="text-gray-400 font-medium hover:underline hover:text-blue-500 flex items-center">
+                      <p className="text-gray-400 font-small hover:underline hover:text-blue-500 flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="22"
-                          height="22"
+                          width="18"
+                          height="18"
                           fill="currentColor"
                           className="mr-2"
                           viewBox="0 0 24 24"
